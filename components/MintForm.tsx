@@ -1,5 +1,11 @@
 'use client'
 
+declare global {
+  interface Window {
+    ethereum?: any
+  }
+}
+
 import { useState } from 'react'
 import { ethers } from 'ethers'
 import { contractAddress, contractABI } from '../utils/contract'
