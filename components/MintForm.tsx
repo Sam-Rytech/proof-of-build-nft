@@ -34,7 +34,13 @@ export default function MintForm() {
 
     try {
       const provider = new ethers.BrowserProvider(window.ethereum)
-      const signer = await provider.getSigner()
+
+      // ✅ Request wallet connection
+      const accounts = await provider.send('eth_requestAccounts', [])
+
+      // ✅ Pass account explicitly to avoid ENS lookup issue on Base Sepolia
+      const signer = await provider.getSigner(accounts[0])
+
       const contract = new ethers.Contract(contractAddress, contractABI, signer)
 
       const tx = await contract.mintBuildNFT(
