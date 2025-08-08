@@ -13,11 +13,11 @@ Mint an NFT to prove you've completed a project. Metadata includes:
 - Tailwind CSS
 - Ethers.js
 
+## Tags
+#build #base #solidity #web3 #nft #defi
+
 ## 🚀 Getting Started
 
 ```bash
 npm install
 npm run dev
-
-## Tags
-#build #base #solidity #web3 #nft #defi
