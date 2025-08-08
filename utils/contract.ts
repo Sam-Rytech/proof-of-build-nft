@@ -1,4 +1,4 @@
-export const contractAddress = 'YOUR_DEPLOYED_CONTRACT_ADDRESS'
+export const contractAddress = 'Y0xA549873499B3E8cBAc4D5d1BfD7d131EbaFFd4eF'
 
 export const contractABI = [
   // Only the ABI needed for frontend interaction
