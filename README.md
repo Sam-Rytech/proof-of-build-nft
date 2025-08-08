@@ -18,3 +18,6 @@ Mint an NFT to prove you've completed a project. Metadata includes:
 ```bash
 npm install
 npm run dev
+
+## Tags
+#build #base #solidity #web3 #nft #defi
